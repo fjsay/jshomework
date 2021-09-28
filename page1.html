@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <meta charset="utf-8">
+    <head>
+  <title>20210916作业</title>
+  <style>
+.box1{width: 280px;height: 280px;background: #000000; border-radius: 90%;}
+.h{ color: #ffffff;
+    padding-top: 50px;
+    text-align: center;
+}
+
+  </style>
+    
+  </head>
+    <body>
+        
+<div class="box1"><div class="h">
+    <h4>训练页面</h4><br><br>
+<h2 onclick="tz()">点击重新开始</h2>
+</div>
+</div>
+
+     
+ <script>
+     function tz(){
+         location.href='index.html';
+     }
+  console.log("接收到左边选择器的值为："+window.localStorage.getItem('t1'));
+  console.log("接收到右边选择器的值为："+window.localStorage.getItem('t2'));
+ </script>
+<!--出处https://gitee.com/webahzjjd/js-homework/upload/main/20210927-->
+        
+    </body>
+</html>

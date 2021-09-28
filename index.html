@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <meta charset="utf-8">
+    <head>
+  <title>作业</title>
+  <style>
+.box1{width: 280px;height: 280px;background: #000000; border-radius: 90%; background-image: url('hm.png');background-repeat: no-repeat; background-size:120px 120px;background-position:80px 80px; color: #fff;}
+.an1{width: 80px;height: 30px;margin-top: 80px;margin-left: 100px;}
+.xzq1{margin-top:130px;margin-left:20px; }
+.xzq2{margin-left:140px;}
+  </style>
+    <script>
+        function gradeChange() {
+            var objS = document.getElementById("pid");
+            var x1 = objS.options[objS.selectedIndex].value;
+        console.log("左边选择项："+x1);
+          localStorage.setItem('t1',x1);
+        }
+    </script>
+    <script>
+        function gradeChangey() {
+            var objS = document.getElementById("pidy");
+            var x2 = objS.options[objS.selectedIndex].value;
+           console.log("右边选择项："+x2);
+             localStorage.setItem('t2', x2);
+        }
+    </script>
+  </head>
+    <body>
+<div class="box1">
+     <select class="xzq1" id="pid" onchange="gradeChange()">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+      </select>分
+    
+     <select class="xzq2" id="pidy" onchange="gradeChangey()">
+         <option value="较慢">较慢</option>
+         <option value="舒缓">舒缓</option>
+         <option value="较快">较快</option>
+      </select>
+  <input type="button" class="an1" value="点我开始" onclick="anks()" /></div>
+
+        <script>
+     function anks(){
+          location.href='page1.html';
+     }
+ </script>
+
+    </body>
+<!--出处https://gitee.com/webahzjjd/js-homework/upload/main/20210927-->
+    
+</html>
